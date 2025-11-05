@@ -34,8 +34,8 @@ jobs:
           images: ghcr.io/${{ github.repository }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
-            type=ref,event=tag,pattern={{version}},prefix=v
-            type=semver,pattern={{major}}.{{minor}},prefix=v
+            type=ref,event=tag,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
             type=sha
 
       - name: Build and push container image
