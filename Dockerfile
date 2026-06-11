@@ -1,4 +1,4 @@
-FROM ghcr.io/restic/restic:0.18.1
+FROM ghcr.io/restic/restic:0.19.0
 
 RUN apk add --no-cache rclone
 
