@@ -6,6 +6,8 @@ on:
       - main
     tags:
       - v*
+    paths:
+      - "Dockerfile"
 
 jobs:
   build-and-push:
